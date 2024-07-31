@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  
+    animation: slide 60s infinite;
+}
+
+@keyframes slide{
+    0% {background: url(../images/byd.jpg) no-repeat; background-size: cover; background-position: center;}
+    11% {background: url(../images/model_s.jpg) no-repeat; background-size: cover; background-position: center;}
+    22% {background: url(../images/model_y.jpg) no-repeat; background-size: cover; background-position: center;}
+    33% {background: url(../images/roadster.jpg) no-repeat; background-size: cover; background-position: center;}
+    44% {background: url(../images/rimac.jpg) no-repeat; background-size: cover; background-position: center;}
+    55% {background: url(../images/lucidair.jpg) no-repeat; background-size: cover; background-position: center;}
+    66% {background: url(../images/kia.jpg) no-repeat; background-size: cover; background-position: center;}
+    77% {background: url(../images/rivian.jpg) no-repeat; background-size: cover; background-position: center;}
+    88% {background: url(../images/hummer.jpg) no-repeat; background-size: cover; background-position: center;}
+    100% {background: url(../images/landcruiser.jpg) no-repeat; background-size: cover; background-position: center;}
+}
+
+.container{
+    width: 430px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0,2);
+    color: whitesmoke;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+.container .messages{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    background: rgba(255, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 5px 1rem;
+    margin: -15px 0 15px;
+}
+
+.container .msg-btn{
+    align-items: center;
+    background-color: transparent;
+    accent-color: none;
+    color: whitesmoke;
+    outline: none;
+    border: none;
+    font-size: large;
+}
+
+/* .container .msg-btn::oncli{
+    font-size: 21px;
+    background: #D8071C;
+    border-color: white;
+} */
+.container h1{
+    color: white;
+    font-size: 36px;
+    text-align: center;
+}
+
+.container .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: whitesmoke;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: whitesmoke;
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+}
+
+.container .remember-forget{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forget label input{
+    accent-color: red;
+    margin-right: 3px;
+}
+
+.remember-forget a{
+    color: whitesmoke;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.remember-forget a:hover{
+    text-decoration: underline rgba(255, 0, 0, 0.6) 2px;
+}
+
+.container .btn{
+    width: 100%;
+    height: 45px;
+    background-color: rgba(255,255,255,0.3);
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(185, 176, 176, 0.5);
+    color: whitesmoke;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.container .btn:hover{
+    font-size: 21px;
+    background: #D8071C;
+    border-color: white;
+}
+
+.container .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a{
+    color:  white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover{
+    text-decoration: underline rgba(255,255,255,0.3) 2px;
+}
