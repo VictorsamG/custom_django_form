@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'custom_form.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'django_app',
+        'USER':'django_app_role',
+        'PASSWORD':'V!ct@rsam.1996',
+        'HOST':'localhost',
+        'PORT':'3306',
     }
 }
 
